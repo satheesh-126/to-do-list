@@ -5,8 +5,6 @@ function Task(){
     const [savename, setsavename] =useState(" ");
     const [saveID, setsaveID] =useState(" ");
     const [ID, setID] = useState(" ");
-    // const userID = localStorage.getItem("userID");
-    // localStorage.setItem("username",name);
     const save = () =>{
             const savedname = JSON.parse(localStorage.getItem("username") || "[]");
         if(name){
@@ -44,4 +42,5 @@ function Task(){
 
     );  
 }
+
     export  default Task;
